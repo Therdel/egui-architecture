@@ -1,0 +1,30 @@
+[package]
+name = "client_gui"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "client_gui"
+path = "src/main.rs"
+required-features = ["native"]
+
+[features]
+default = ["native"]
+native = []
+
+[dependencies]
+client_core = { path = "../client_core" }
+eframe = { version = "0.27", default-features = false, features = ["glow", "default_fonts"] }
+egui = "0.27"
+
+# Native-only dependencies
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+tokio = { version = "1", features = ["rt-multi-thread"] }
+
+# Web-only dependencies (for the WASM entry point)
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
