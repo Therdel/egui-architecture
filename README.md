@@ -1,4 +1,5 @@
-# egui-arch
+# eGUI Architecture experiment *vibe-code*
+
 <p>
 	<img src="gui-desktop.png" alt="Desktop GUI" height="140" style="margin-right:8px;" />
 	<img src="gui-browser.png" alt="Browser GUI" height="140" style="margin-right:8px;" />
@@ -12,8 +13,6 @@ Architecture to reuse logic across three frontends, each running as a self-conta
 - a CLI
 
 Each frontend does REST calls or watches changes using WebSockets.
-
-
 
 ## Crates
 
