@@ -1,8 +1,11 @@
-# eGUI Architecture experiment *vibe-code*
+# eGUI Architecture experiment [try it!](https://therdel.github.io/egui-architecture/)
+_beware: some quick vibe code_
 
 <p>
 	<img src="gui-desktop.png" alt="Desktop GUI" height="140" style="margin-right:8px;" />
-	<img src="gui-browser.png" alt="Browser GUI" height="140" style="margin-right:8px;" />
+	<a href=https://therdel.github.io/egui-architecture/>
+	    <img src="gui-browser.png" alt="Browser GUI" height="140" style="margin-right:8px;" />
+	</a>
 	<img src="cli.png" alt="CLI" height="140" />
 </p>
 
